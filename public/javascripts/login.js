@@ -1,4 +1,4 @@
-setTimeout("location.reload(true);", 3000);
+console.log("This is Logon JavaScript");
 function login() {
     console.log("here");
 }

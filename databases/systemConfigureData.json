@@ -1,0 +1,28 @@
+{
+    "no": 1,
+    "systemName": [
+        "30KVA UPS",
+        "30KVA UPS",
+        "30KVA UPS"
+    ],
+    "BatteryKind": [
+        "VGS200",
+        "VGS200",
+        "VGS200"
+    ],
+    "InstallNumber": [
+        "180",
+        "180",
+        "180"
+    ],
+    "Installdate": [
+        "2022-05-30",
+        "2022-05-30",
+        "2022-05-30"
+    ],
+    "InstallPositon": [
+        "전기실",
+        "전기실",
+        "전기실"
+    ]
+}
