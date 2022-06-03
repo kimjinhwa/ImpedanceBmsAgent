@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="/stylesheets/style.css">
     <meta charset="UTF-8">
     <meta hame="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.js"> </script>
     <script src="/javascripts/common.js"> </script>
     <div class="menu">
       <nav class="dropdownmenu">
@@ -27,17 +28,17 @@
     </div>
   </head>
   <body>
-    <script src="/javascripts/systemConfigure.js"> </script>
+    <script type="text/javascript" src="/javascripts/systemConfigure.js"> </script>
     <h1></h1>
     <p>Welcome to </p>
     <p>이제 여기에다 제이슨 파일을 받아와서 데이타를 채워 넣자</p>
     <label onClick="getSystemConfigurationData()">서버에 데이타 요청</label>
-    <div class="table-title"> 
+    <div class="table-title">
       <h3 class="Data">시스템 설정</h3>
     </div>
-    <table class="table-fill"> 
+    <table class="table-fill" id="table-data"> 
       <thead>
-        <tr> 
+        <tr class="rows"> 
           <th class="text-left">NO </th>
           <th class="text-left">시스템명</th>
           <th class="text-left">종류</th>
@@ -47,25 +48,25 @@
         </tr>
       </thead>
       <tbody class="table-hover"> 
-        <tr>
+        <tr class="rows"> 
           <td class="text-left">Hanuary</td>
           <td class="text-left">$50,000,000 </td>
           <td class="text-left">$50,000,000 </td>
           <td class="text-left">$50,000,000 </td>
         </tr>
-        <tr>
+        <tr class="rows"> 
           <td class="text-left">Hanuary</td>
           <td class="text-left">$50,000,000 </td>
           <td class="text-left">$50,000,000 </td>
           <td class="text-left">$50,000,000 </td>
         </tr>
-        <tr>
+        <tr class="rows"> 
           <td class="text-left">Hanuary</td>
           <td class="text-left">$50,000,000 </td>
           <td class="text-left">$50,000,000 </td>
           <td class="text-left">$50,000,000 </td>
         </tr>
-        <tr>
+        <tr class="rows"> 
           <td class="text-left">Hanuary</td>
           <td class="text-left">$50,000,000 </td>
           <td class="text-left">$50,000,000 </td>

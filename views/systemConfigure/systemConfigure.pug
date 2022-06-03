@@ -1,7 +1,7 @@
 extends ../layout
 
 block content
-  script(src="/javascripts/systemConfigure.js") 
+  script(type="text/javascript" src="/javascripts/systemConfigure.js") 
    
   h1= title
   p Welcome to #{title}
@@ -9,11 +9,12 @@ block content
 
   label( onClick='getSystemConfigurationData()') 서버에 데이타 요청
  
-  .table-title 
+  .table-title
     h3.Data 시스템 설정
-  table.table-fill 
+  //- table.table-fill(id='table-data' onClick='getSystemConfigureTableRow()')
+  table.table-fill(id='table-data') 
     thead
-      tr 
+      tr.rows 
         th.text-left NO 
         th.text-left 시스템명
         th.text-left 종류
@@ -21,22 +22,22 @@ block content
         th.text-left 일시  
         th.text-left 위치 
     tbody.table-hover 
-      tr
+      tr.rows 
         td.text-left Hanuary
         td.text-left $50,000,000 
         td.text-left $50,000,000 
         td.text-left $50,000,000 
-      tr
+      tr.rows 
         td.text-left Hanuary
         td.text-left $50,000,000 
         td.text-left $50,000,000 
         td.text-left $50,000,000 
-      tr
+      tr.rows 
         td.text-left Hanuary
         td.text-left $50,000,000 
         td.text-left $50,000,000 
         td.text-left $50,000,000 
-      tr
+      tr.rows 
         td.text-left Hanuary
         td.text-left $50,000,000 
         td.text-left $50,000,000 
