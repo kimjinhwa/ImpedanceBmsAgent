@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset='UTF-8')
+    meta(hame='viewport' content='width=device-width, initial-scale=1.0')
+    block headContent
+    script(src="/javascripts/login.js") 
+    div.menu
+      nav.dropdownmenu
+        ul
+          li: a(href="/") Home 
+            ul#submenu
+              li: a(href="/login") Login 
+          li: a(href="/") 축전지 모니터링
+          li: a(href="/") 데이타 출력
+            ul#submenu
+              li: a(href="/") Difference between SVG vs. Canvas
+              li: a(href="/") New features in HTML5
+              li: a(href="/") Creating links to section within a webPage 
+          li: a(href="/") 시스템설정
+          li: a(href="/") Contact us 
+  body
+    block content

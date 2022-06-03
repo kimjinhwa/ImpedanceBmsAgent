@@ -1,0 +1,19 @@
+
+extends ../layout
+
+//- block headContent 
+//-   script(src="javascripts/login.js") 
+block content
+  //- h1= title
+  //- p Welcome to #{title}
+  div.login-page
+    div.form
+      div.login-form
+        input#userId(type='text' placeholder='name')
+        input#passWd(type='password' placeholder='password')
+        p.message  
+        label( onClick="login()") 로그인
+        p.message Not registered?  
+         a(href="http://") Consult to manager
+
+

@@ -1,0 +1,144 @@
+ /* @import url(https://fonts.googleapis.com/css?family=Roboto:300); */
+
+ body {
+   width: 100%;
+   padding: 50px;
+   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+ }
+
+ a {
+   color: #00B7FF;
+ }
+
+ .menu {
+   display: flex;
+   width: 100%;
+   justify-items: auto;
+   justify-content: baseline;
+ }
+
+ .dropdownmenu ul,
+ .dropdownmenu li {
+   margin: 0;
+   padding: 0;
+ }
+
+ .dropdownmenu ul {
+   background: gray;
+   list-style: none;
+   width: 100%;
+ }
+
+ .dropdownmenu a {
+   background: #4CAF50;
+   color: #FFFFFF;
+   display: block;
+   font: bold 12px/20px sans-serif;
+   padding: 10px 25px;
+   text-align: center;
+   text-decoration: none;
+   -webkit-transition: all .25s ease;
+   -moz-transition: all .25s ease;
+   -ms-transition: all .25s ease;
+   -o-transition: all .25s ease;
+   transition: all .25s ease;
+ }
+
+ .dropdownmenu li {
+   float: left;
+   position: relative;
+   width: auto;
+ }
+
+ .dropdownmenu li:hover a {
+   background: #43A047;
+ }
+
+ #submenu {
+   left: 0;
+   opacity: 0;
+   position: absolute;
+   top: 35px;
+   visibility: hidden;
+   z-index: 1;
+ }
+
+ li:hover ul#submenu {
+   opacity: 1;
+   top: 40px;
+   /* adjust this as per top nav padding top & bottom comes */
+   visibility: visible;
+ }
+
+ #submenu li {
+   float: none;
+   width: 100%;
+ }
+
+ #submenu a:hover {
+   background: #DF4B05;
+ }
+
+ #submenu a {
+   background-color: #0df819;
+ }
+
+ .login-page {
+   width: 360px;
+   padding: 10% 0 0;
+   margin: 1% 15%;
+ }
+
+ .login-page .form {
+   position: relative;
+   z-index: 1;
+   background: #FFFFFF;
+   max-width: 360px;
+   margin: 0 auto 100px;
+   padding: 45px;
+   text-align: center;
+   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+ }
+
+ .login-page .form .login-form input {
+   outline: 0;
+   background: #f2f2f2;
+   width: 100%;
+   border: 0;
+   margin: 0 0 15px;
+   padding: 15px;
+   box-sizing: border-box;
+   font-size: 14px;
+ }
+
+ .login-page .form .login-form label {
+   outline: 0;
+   border: 0;
+   display: inline-block;
+   width: 90%;
+   background: #4CAF50;
+   margin: 0 0 15px;
+   padding: 15px;
+   font-size: 14px;
+   cursor: pointer;
+ }
+
+ .login-page .form .login-form label:hover,
+ .login-page .form .login-form label:focus {
+   background: #43A047;
+ }
+
+ .login-page .form .login-form label:active {
+   background: #42749a;
+ }
+
+ .login-page .message {
+   margin: 15px 0 0;
+   color: #b3b3b3;
+   font-size: 12px;
+ }
+
+ .login-page .message a {
+   color: #4CAF50;
+   text-decoration: none;
+ }

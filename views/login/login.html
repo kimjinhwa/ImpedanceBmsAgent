@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <meta charset="UTF-8">
+    <meta hame="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/javascripts/login.js"> </script>
+    <div class="menu">
+      <nav class="dropdownmenu">
+        <ul>
+          <li><a href="/">Home 
+              <ul id="submenu">
+                <li><a href="/login">Login </a></li>
+              </ul></a></li>
+          <li><a href="/">축전지 모니터링</a></li>
+          <li><a href="/">데이타 출력
+              <ul id="submenu">
+                <li><a href="/">Difference between SVG vs. Canvas</a></li>
+                <li><a href="/">New features in HTML5</a></li>
+                <li><a href="/">Creating links to section within a webPage </a></li>
+              </ul></a></li>
+          <li><a href="/">시스템설정</a></li>
+          <li><a href="/">Contact us </a></li>
+        </ul>
+      </nav>
+    </div>
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="form">
+        <div class="login-form">
+          <input id="userId" type="text" placeholder="name">
+          <input id="passWd" type="password" placeholder="password">
+          <p class="message"> </p>
+          <label onClick="login()">로그인</label>
+          <p class="message">Not registered?  <a href="http://">Consult to manager</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
