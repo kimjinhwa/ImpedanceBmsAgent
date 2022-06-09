@@ -28,10 +28,14 @@
     </div>
   </head>
   <body>
-    <script type="text/javascript" src="/javascripts/systemConfigure.js"> </script>
+    <script type="text/javascript" src="/javascripts/systemConfigure.js"></script>
     <h1></h1>
     <p>Welcome to </p>
-    <p>이제 여기에다 제이슨 파일을 받아와서 데이타를 채워 넣자</p>
+    <p>
+      이제 여기에다 제이슨 파일을 받아와서 데이타를 채워 넣자
+      <br>테이블을 선택하면 하단에 입력필드를 이용하여 
+      <br>삭제 / 추가 / 변경 등의 작업을 할 수 있게 한다.
+    </p>
     <label onClick="getSystemConfigurationData()">서버에 데이타 요청</label>
     <div class="table-title">
       <h3 class="Data">시스템 설정</h3>
@@ -47,32 +51,7 @@
           <th class="text-left">위치 </th>
         </tr>
       </thead>
-      <tbody class="table-hover"> 
-        <tr class="rows"> 
-          <td class="text-left">Hanuary</td>
-          <td class="text-left">$50,000,000 </td>
-          <td class="text-left">$50,000,000 </td>
-          <td class="text-left">$50,000,000 </td>
-        </tr>
-        <tr class="rows"> 
-          <td class="text-left">Hanuary</td>
-          <td class="text-left">$50,000,000 </td>
-          <td class="text-left">$50,000,000 </td>
-          <td class="text-left">$50,000,000 </td>
-        </tr>
-        <tr class="rows"> 
-          <td class="text-left">Hanuary</td>
-          <td class="text-left">$50,000,000 </td>
-          <td class="text-left">$50,000,000 </td>
-          <td class="text-left">$50,000,000 </td>
-        </tr>
-        <tr class="rows"> 
-          <td class="text-left">Hanuary</td>
-          <td class="text-left">$50,000,000 </td>
-          <td class="text-left">$50,000,000 </td>
-          <td class="text-left">$50,000,000 </td>
-        </tr>
-      </tbody>
+      <tbody class="table-hover" id="tbody"></tbody>
     </table>
     <p></p>
   </body>

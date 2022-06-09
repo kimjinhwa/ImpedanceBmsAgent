@@ -1,17 +1,20 @@
 extends ../layout
 
 block content
-  script(type="text/javascript" src="/javascripts/systemConfigure.js") 
+  script(type="text/javascript" src="/javascripts/systemConfigure.js"). 
    
   h1= title
   p Welcome to #{title}
-  p 이제 여기에다 제이슨 파일을 받아와서 데이타를 채워 넣자
-
+  p. 
+    이제 여기에다 제이슨 파일을 받아와서 데이타를 채워 넣자
+    <br>테이블을 선택하면 하단에 입력필드를 이용하여 
+    <br>삭제 / 추가 / 변경 등의 작업을 할 수 있게 한다.
   label( onClick='getSystemConfigurationData()') 서버에 데이타 요청
- 
+
   .table-title
     h3.Data 시스템 설정
   //- table.table-fill(id='table-data' onClick='getSystemConfigureTableRow()')
+
   table.table-fill(id='table-data') 
     thead
       tr.rows 
@@ -21,25 +24,5 @@ block content
         th.text-left 수량  
         th.text-left 일시  
         th.text-left 위치 
-    tbody.table-hover 
-      tr.rows 
-        td.text-left Hanuary
-        td.text-left $50,000,000 
-        td.text-left $50,000,000 
-        td.text-left $50,000,000 
-      tr.rows 
-        td.text-left Hanuary
-        td.text-left $50,000,000 
-        td.text-left $50,000,000 
-        td.text-left $50,000,000 
-      tr.rows 
-        td.text-left Hanuary
-        td.text-left $50,000,000 
-        td.text-left $50,000,000 
-        td.text-left $50,000,000 
-      tr.rows 
-        td.text-left Hanuary
-        td.text-left $50,000,000 
-        td.text-left $50,000,000 
-        td.text-left $50,000,000 
+    tbody.table-hover(id='tbody')
   p

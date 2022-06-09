@@ -4,9 +4,6 @@
 // fs.readFile('databases/systemConfigureData.json', err, data => {
 //     if (err) throw err;
 //     console.log(data);
-
-
-
 // });
 //function systemConfigureOnClick() {
 // 테이블의 Row 클릭시 값 가져오기
@@ -26,6 +23,7 @@
 
 $(document).ready(() => {
     console.log("two ready");
+    getSystemConfigurationData();
 });
 $(document).ready(() => {
     console.log("Document ready here");
@@ -69,7 +67,7 @@ $(document).ready(() => {
 });
 
 function getSystemConfigurationData() {
-    let myData;
+    var systemConfigureData;
     console.log('여기서 서버에 데이타를 요청합니다.');
     const systemData = {
         "id": ["mvcjhkim", "inhee"],
@@ -86,16 +84,24 @@ function getSystemConfigurationData() {
         .then(response => response.json())
         .then((json) => {
             console.log(json);
-            myData = json;
-            console.log(myData.id[0]);
-            console.log(myData.id[1]);
-        })
-    // .then((response) => {
-    //     console.log(response.json());
-    // }).then((data) => {
-    //     console.log(data);
+            systemConfigureData = json;
+            var table = document.getElementById('tbody');
 
-    // }).catch((e) => {
-    //     console.log(e);
-    // });
+            var row = '';
+            for (idx in systemConfigureData) {
+                row +=
+                    `
+                <tr class="rows" id="rows-data"> 
+                <td class="text-left">${systemConfigureData[idx]['no']}</td>
+                <td class="text-left">${systemConfigureData[idx]['systemName']}</td>
+                <td class="text-left">${systemConfigureData[idx]['BatteryKind']}</td>
+                <td class="text-left">${systemConfigureData[idx]['InstallNumber']}</td>
+                <td class="text-left">${systemConfigureData[idx]['Installdate']}</td>
+                <td class="text-left">${systemConfigureData[idx]['InstallPositon']}</td>
+                </tr>
+                `
+            };
+            table.innerHTML += row;
+            console.log(table);
+        })
 }

@@ -1,28 +1,26 @@
-{
-    "no": 1,
-    "systemName": [
-        "30KVA UPS",
-        "30KVA UPS",
-        "30KVA UPS"
-    ],
-    "BatteryKind": [
-        "VGS200",
-        "VGS200",
-        "VGS200"
-    ],
-    "InstallNumber": [
-        "180",
-        "180",
-        "180"
-    ],
-    "Installdate": [
-        "2022-05-30",
-        "2022-05-30",
-        "2022-05-30"
-    ],
-    "InstallPositon": [
-        "전기실",
-        "전기실",
-        "전기실"
-    ]
-}
+[
+    {
+        "no": "1",
+        "systemName": "10KVA UPS",
+        "BatteryKind": "VGS200",
+        "InstallNumber": "180",
+        "InstallDate": "2022-02-30",
+        "InstallPositon": "전기실1"
+    },
+    {
+        "no": "2",
+        "systemName": "20KVA UPS",
+        "BatteryKind": "VGS300",
+        "InstallNumber": "181",
+        "InstallDate": "2022-02-30",
+        "InstallPositon": "전기실1"
+    },
+    {
+        "no": "3",
+        "systemName": "30KVA UPS",
+        "BatteryKind": "VGS400",
+        "InstallNumber": "184",
+        "InstallDate": "2022-02-30",
+        "InstallPositon": "전기실1"
+    }
+]
