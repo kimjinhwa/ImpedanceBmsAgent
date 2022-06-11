@@ -10,9 +10,24 @@
    color: #00B7FF;
  }
 
+ label {
+   color: #00B7FF;
+ }
+
+ label:hover {
+   color: #6e1f22;
+ }
+
+ label:single-button {
+   color: #f90439;
+ }
+
+
  .menu {
    display: flex;
-   width: 100%;
+   margin-left: 30px;
+   max-width: 80%;
+   width: 80%;
    justify-items: auto;
    justify-content: baseline;
  }
@@ -33,7 +48,7 @@
    background: #4CAF50;
    color: #FFFFFF;
    display: block;
-   font: bold 12px/20px sans-serif;
+   font: bold 14px/20px sans-serif;
    padding: 10px 25px;
    text-align: center;
    text-decoration: none;
@@ -80,7 +95,7 @@
  }
 
  #submenu a {
-   background-color: #0df819;
+   background-color: #43A047;
  }
 
  .login-page {
@@ -147,12 +162,23 @@
 
  /* 테이블에 대한 설정  */
  div.table-title {
-   display: block;
+   display: flex;
    margin: auto;
-   max-width: 100%;
+   max-width: 80%;
    padding: 5px;
-   width: 100%;
+   width: 80%;
+   margin-left: 30px;
+   justify-content: center;
  }
+
+ .div-table {
+   display: flex;
+   padding: 5px;
+   margin-left: 30px;
+   max-width: 80%;
+   width: 80%;
+ }
+
 
  .table-title h3 {
    color: #130f0f;
@@ -173,11 +199,12 @@
    border-collapse: collapse;
    height: 320px;
    margin: auto;
-   max-width: 100%;
+   max-width: 80%;
    padding: 5px;
    width: 100%;
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
    animation: float 5s infinite;
+   font-size: 16px;
  }
 
  th {
@@ -186,7 +213,6 @@
    background: #1b1e24;
    border-bottom: 4px solid #9ea7af;
    border-right: 1px solid #343a45;
-   font-size: 23px;
    font-weight: 100;
    padding: 24px;
    text-align: left;
@@ -205,9 +231,8 @@
 
  tr {
    border-top: 1px solid #C1C3D1;
-   border-bottom-: 1px solid #C1C3D1;
+   border-bottom: 1px solid #C1C3D1;
    color: #666B85;
-   font-size: 16px;
    font-weight: normal;
    text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
  }
@@ -248,7 +273,6 @@
    text-align: left;
    vertical-align: middle;
    font-weight: 300;
-   font-size: 18px;
    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
    border-right: 1px solid #C1C3D1;
  }

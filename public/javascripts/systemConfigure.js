@@ -85,8 +85,8 @@ function getSystemConfigurationData() {
         .then((json) => {
             console.log(json);
             systemConfigureData = json;
-            var table = document.getElementById('tbody');
 
+            var table = document.getElementById('tbody');
             var row = '';
             for (idx in systemConfigureData) {
                 row +=
@@ -96,7 +96,7 @@ function getSystemConfigurationData() {
                 <td class="text-left">${systemConfigureData[idx]['systemName']}</td>
                 <td class="text-left">${systemConfigureData[idx]['BatteryKind']}</td>
                 <td class="text-left">${systemConfigureData[idx]['InstallNumber']}</td>
-                <td class="text-left">${systemConfigureData[idx]['Installdate']}</td>
+                <td class="text-left">${systemConfigureData[idx]['InstallDate']}</td>
                 <td class="text-left">${systemConfigureData[idx]['InstallPositon']}</td>
                 </tr>
                 `
