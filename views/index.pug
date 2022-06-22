@@ -1,10 +1,26 @@
 extends layout
-
 block content
+  script(type="text/javascript" src="/javascripts/index.js"). 
+  script.  
+    setTimeout("location.reload(true);", 4000);
+  
+
   h1= title
   p Welcome to #{title}
+  .div-body 
+    .div-table
+      table.table-fill(id='table-data') 
+        thead
+          tr.rows 
+            th.text-left("width=10px") NO 
+            th.text-left("width=100px") 시스템명
+            th.text-left("width=100px") 종류
+            th.text-left("width=40px") 수량  
+            th.text-left("width=100px") 일시  
+            th.text-left 위치 
+        tbody.table-hover(id='tbody')
 
-
+  label( onClick='getSystemConfigurationData()') 서버에 데이타 요청
 //- <!DOCTYPE html>
 //- <html lang="ko">
 //- <head>
