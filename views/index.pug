@@ -2,7 +2,7 @@ extends layout
 block content
   script(type="text/javascript" src="/javascripts/index.js"). 
   script.  
-    setTimeout("location.reload(true);", 4000);
+    //- setTimeout("location.reload(true);", 4000);
   
 
   h1= title
@@ -10,17 +10,20 @@ block content
   .div-body 
     .div-table
       table.table-fill(id='table-data') 
-        thead
+        thead(id='thead')
           tr.rows 
-            th.text-left("width=10px") NO 
-            th.text-left("width=100px") 시스템명
+            th.text-left("width=10px" ) NO 
+            th.text-left( "width=100px" style="display:none") 테이블 
+            th.text-left( "width=100px") 시스템명
             th.text-left("width=100px") 종류
             th.text-left("width=40px") 수량  
             th.text-left("width=100px") 일시  
             th.text-left 위치 
         tbody.table-hover(id='tbody')
-
-  label( onClick='getSystemConfigurationData()') 서버에 데이타 요청
+      table.table-cell(id='table-cellData')
+        thead(id='tCellHead')
+        tbody(id='tCellBody')
+  label(id='status_label' onClick='getSystemConfigurationData()') 서버에 데이타 요청
 //- <!DOCTYPE html>
 //- <html lang="ko">
 //- <head>

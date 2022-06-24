@@ -30,7 +30,7 @@
   <body>
     <script type="text/javascript" src="/javascripts/index.js"></script>
     <script>
-      setTimeout("location.reload(true);", 4000);
+      //- setTimeout("location.reload(true);", 4000);
       
       
     </script>
@@ -39,9 +39,10 @@
     <div class="div-body"> 
       <div class="div-table">
         <table class="table-fill" id="table-data"> 
-          <thead>
+          <thead id="thead">
             <tr class="rows"> 
               <th class="text-left" width=10px>NO </th>
+              <th class="text-left" width=100px style="display:none">테이블 </th>
               <th class="text-left" width=100px>시스템명</th>
               <th class="text-left" width=100px>종류</th>
               <th class="text-left" width=40px>수량  </th>
@@ -51,9 +52,13 @@
           </thead>
           <tbody class="table-hover" id="tbody"></tbody>
         </table>
+        <table class="table-cell" id="table-cellData">
+          <thead id="tCellHead"></thead>
+          <tbody id="tCellBody"></tbody>
+        </table>
       </div>
     </div>
-    <label onClick="getSystemConfigurationData()">서버에 데이타 요청</label>
+    <label id="status_label" onClick="getSystemConfigurationData()">서버에 데이타 요청</label>
   </body>
   <bottom>
     <p>bottom line</p>

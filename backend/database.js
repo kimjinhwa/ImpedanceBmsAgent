@@ -13,10 +13,11 @@ mongoosedb.once('open', function () {
     var cursor = mongoosedb.collection('bms_a').find();
     //cursor.forEach(console.dir);
     cursor.forEach((doc) => {
-        console.log(doc);
-        console.log(doc.cellValue[0][1]);
-        console.log(doc.logDate);
-        console.log(doc.cellValue.length);
+        //console.log(doc);
+        //console.log(doc.cellValue[0][1]);
+        //console.log(doc.logDate);
+        //console.log(doc.cellValue.length);
     });
-})
+});
+
 module.exports = mongoosedb;
