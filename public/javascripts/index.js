@@ -21,6 +21,7 @@
 
 // }
 
+var socket = io();
 const bmsInfoTable = `
         <table class="table-fill" id="table-data"> 
           <thead id="thead">

@@ -1,6 +1,7 @@
 extends layout
 block content
-  script(type="text/javascript" src="/javascripts/index.js"). 
+  script(type="text/javascript" defer src="/socket.io/socket.io.js")
+  script(type="text/javascript" defer src="/javascripts/index.js") 
   script.  
     //- setTimeout("location.reload(true);", 4000);
   

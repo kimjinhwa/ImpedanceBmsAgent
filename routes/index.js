@@ -16,6 +16,7 @@ var db = require('../backend/database')
 router.get('/', function (req, res, next) {
   res.render('index', { title: 'BMS관리 시스템' });
 });
+
 router.get('/login', function (req, res, next) {
   res.render('login/login', { title: 'Login Process' });
 });
